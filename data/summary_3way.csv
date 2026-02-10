@@ -1,0 +1,4 @@
+model,type,test_prauc,lift
+XGBoost,ML (22 fitur),0.2177,4.12
+Lag-LLaMA (Zero-Shot),Foundation Model (univariate),0.1116,2.11
+Lag-LLaMA (Fine-Tuned),Foundation Model + FT (univariate),0.2453,4.64

@@ -1,0 +1,154 @@
+model,score_col,theta_min,EventRecall,FA_per_Day,AvgAlerts_per_Day,n_alerts
+XGBoost,xgb_score,0.0,0.7865,51.07,54.06,9918
+XGBoost,xgb_score,0.02,0.7865,51.07,54.06,9918
+XGBoost,xgb_score,0.04,0.7865,51.07,54.06,9918
+XGBoost,xgb_score,0.06,0.7865,51.07,54.06,9918
+XGBoost,xgb_score,0.08,0.7865,51.07,54.06,9918
+XGBoost,xgb_score,0.1,0.7851,51.04,54.03,9912
+XGBoost,xgb_score,0.12,0.7851,50.95,53.94,9896
+XGBoost,xgb_score,0.14,0.7822,50.79,53.77,9864
+XGBoost,xgb_score,0.16,0.7822,50.38,53.36,9789
+XGBoost,xgb_score,0.18,0.7808,49.78,52.75,9677
+XGBoost,xgb_score,0.2,0.7822,49.14,52.12,9561
+XGBoost,xgb_score,0.22,0.7779,48.23,51.19,9391
+XGBoost,xgb_score,0.24,0.7765,47.33,50.29,9226
+XGBoost,xgb_score,0.26,0.7765,46.27,49.23,9031
+XGBoost,xgb_score,0.28,0.7808,45.08,48.05,8815
+XGBoost,xgb_score,0.3,0.7722,43.74,46.68,8564
+XGBoost,xgb_score,0.32,0.7665,42.52,45.44,8336
+XGBoost,xgb_score,0.34,0.7593,41.19,44.08,8086
+XGBoost,xgb_score,0.36,0.7579,39.74,42.62,7819
+XGBoost,xgb_score,0.38,0.7493,38.17,41.02,7526
+XGBoost,xgb_score,0.4,0.7378,36.69,39.5,7246
+XGBoost,xgb_score,0.42,0.7221,34.85,37.6,6898
+XGBoost,xgb_score,0.44,0.7049,32.89,35.57,6526
+XGBoost,xgb_score,0.46,0.6948,30.81,33.46,6138
+XGBoost,xgb_score,0.48,0.6734,28.71,31.28,5738
+XGBoost,xgb_score,0.5,0.6619,26.33,28.85,5293
+XGBoost,xgb_score,0.52,0.6418,24.26,26.7,4899
+XGBoost,xgb_score,0.54,0.6117,21.98,24.31,4459
+XGBoost,xgb_score,0.56,0.5931,19.51,21.77,3993
+XGBoost,xgb_score,0.58,0.5759,17.09,19.29,3538
+XGBoost,xgb_score,0.6,0.5559,15.0,17.12,3140
+XGBoost,xgb_score,0.62,0.5258,13.01,15.01,2754
+XGBoost,xgb_score,0.64,0.4871,11.35,13.2,2422
+XGBoost,xgb_score,0.66,0.4542,9.79,11.52,2113
+XGBoost,xgb_score,0.68,0.4398,8.24,9.91,1818
+XGBoost,xgb_score,0.7000000000000001,0.4183,6.93,8.52,1563
+XGBoost,xgb_score,0.72,0.3868,5.83,7.3,1339
+XGBoost,xgb_score,0.74,0.3725,4.64,6.06,1112
+XGBoost,xgb_score,0.76,0.3295,3.7,4.95,908
+XGBoost,xgb_score,0.78,0.3095,2.96,4.14,759
+XGBoost,xgb_score,0.8,0.2822,2.22,3.29,604
+XGBoost,xgb_score,0.8200000000000001,0.2564,1.85,2.82,518
+XGBoost,xgb_score,0.84,0.2163,1.49,2.32,425
+XGBoost,xgb_score,0.86,0.1848,1.13,1.83,336
+XGBoost,xgb_score,0.88,0.1619,0.84,1.46,267
+XGBoost,xgb_score,0.9,0.1304,0.62,1.12,205
+XGBoost,xgb_score,0.92,0.096,0.31,0.67,123
+XGBoost,xgb_score,0.9400000000000001,0.043,0.12,0.28,52
+XGBoost,xgb_score,0.96,0.0057,0.0,0.02,4
+XGBoost,xgb_score,0.98,0.0,0.0,0.0,0
+XGBoost,xgb_score,1.0,0.0,0.0,0.0,0
+Lag-LLaMA (Zero-Shot),ll_score,0.0,0.7865,51.07,54.06,9918
+Lag-LLaMA (Zero-Shot),ll_score,0.02,0.7149,34.18,36.9,6770
+Lag-LLaMA (Zero-Shot),ll_score,0.04,0.5759,23.23,25.42,4664
+Lag-LLaMA (Zero-Shot),ll_score,0.06,0.4914,17.92,19.79,3630
+Lag-LLaMA (Zero-Shot),ll_score,0.08,0.414,14.69,16.27,2984
+Lag-LLaMA (Zero-Shot),ll_score,0.1,0.3739,12.16,13.58,2491
+Lag-LLaMA (Zero-Shot),ll_score,0.12,0.3223,10.36,11.59,2126
+Lag-LLaMA (Zero-Shot),ll_score,0.14,0.2994,8.85,9.99,1832
+Lag-LLaMA (Zero-Shot),ll_score,0.16,0.2722,7.72,8.76,1607
+Lag-LLaMA (Zero-Shot),ll_score,0.18,0.2536,6.85,7.82,1434
+Lag-LLaMA (Zero-Shot),ll_score,0.2,0.2264,6.06,6.92,1270
+Lag-LLaMA (Zero-Shot),ll_score,0.22,0.202,5.57,6.33,1162
+Lag-LLaMA (Zero-Shot),ll_score,0.24,0.1748,4.98,5.65,1036
+Lag-LLaMA (Zero-Shot),ll_score,0.26,0.149,4.52,5.09,933
+Lag-LLaMA (Zero-Shot),ll_score,0.28,0.1304,4.12,4.62,847
+Lag-LLaMA (Zero-Shot),ll_score,0.3,0.1117,3.71,4.13,758
+Lag-LLaMA (Zero-Shot),ll_score,0.32,0.1017,3.4,3.79,695
+Lag-LLaMA (Zero-Shot),ll_score,0.34,0.0946,3.11,3.47,636
+Lag-LLaMA (Zero-Shot),ll_score,0.36,0.0817,2.81,3.12,572
+Lag-LLaMA (Zero-Shot),ll_score,0.38,0.0745,2.58,2.86,525
+Lag-LLaMA (Zero-Shot),ll_score,0.4,0.063,2.43,2.67,489
+Lag-LLaMA (Zero-Shot),ll_score,0.42,0.053,2.26,2.46,451
+Lag-LLaMA (Zero-Shot),ll_score,0.44,0.0501,2.09,2.28,419
+Lag-LLaMA (Zero-Shot),ll_score,0.46,0.0487,1.92,2.1,386
+Lag-LLaMA (Zero-Shot),ll_score,0.48,0.0487,1.79,1.97,362
+Lag-LLaMA (Zero-Shot),ll_score,0.5,0.0501,1.65,1.84,338
+Lag-LLaMA (Zero-Shot),ll_score,0.52,0.0458,1.46,1.64,300
+Lag-LLaMA (Zero-Shot),ll_score,0.54,0.043,1.28,1.44,264
+Lag-LLaMA (Zero-Shot),ll_score,0.56,0.043,1.13,1.29,237
+Lag-LLaMA (Zero-Shot),ll_score,0.58,0.043,1.03,1.19,219
+Lag-LLaMA (Zero-Shot),ll_score,0.6,0.043,0.9,1.07,196
+Lag-LLaMA (Zero-Shot),ll_score,0.62,0.0415,0.75,0.91,167
+Lag-LLaMA (Zero-Shot),ll_score,0.64,0.0401,0.68,0.83,152
+Lag-LLaMA (Zero-Shot),ll_score,0.66,0.0315,0.59,0.71,131
+Lag-LLaMA (Zero-Shot),ll_score,0.68,0.0287,0.51,0.62,114
+Lag-LLaMA (Zero-Shot),ll_score,0.7000000000000001,0.0229,0.4,0.49,90
+Lag-LLaMA (Zero-Shot),ll_score,0.72,0.0215,0.34,0.42,77
+Lag-LLaMA (Zero-Shot),ll_score,0.74,0.0186,0.28,0.35,65
+Lag-LLaMA (Zero-Shot),ll_score,0.76,0.0172,0.22,0.29,53
+Lag-LLaMA (Zero-Shot),ll_score,0.78,0.0201,0.12,0.2,36
+Lag-LLaMA (Zero-Shot),ll_score,0.8,0.0172,0.1,0.17,31
+Lag-LLaMA (Zero-Shot),ll_score,0.8200000000000001,0.0143,0.05,0.1,19
+Lag-LLaMA (Zero-Shot),ll_score,0.84,0.0129,0.03,0.08,15
+Lag-LLaMA (Zero-Shot),ll_score,0.86,0.0115,0.02,0.06,11
+Lag-LLaMA (Zero-Shot),ll_score,0.88,0.01,0.01,0.04,8
+Lag-LLaMA (Zero-Shot),ll_score,0.9,0.0057,0.01,0.03,5
+Lag-LLaMA (Zero-Shot),ll_score,0.92,0.0014,0.0,0.01,1
+Lag-LLaMA (Zero-Shot),ll_score,0.9400000000000001,0.0,0.0,0.0,0
+Lag-LLaMA (Zero-Shot),ll_score,0.96,0.0,0.0,0.0,0
+Lag-LLaMA (Zero-Shot),ll_score,0.98,0.0,0.0,0.0,0
+Lag-LLaMA (Zero-Shot),ll_score,1.0,0.0,0.0,0.0,0
+Lag-LLaMA (Fine-Tuned),ll_ft_score,0.0,0.7865,51.07,54.06,9918
+Lag-LLaMA (Fine-Tuned),ll_ft_score,0.02,0.7636,43.4,46.3,8495
+Lag-LLaMA (Fine-Tuned),ll_ft_score,0.04,0.7221,32.63,35.38,6491
+Lag-LLaMA (Fine-Tuned),ll_ft_score,0.06,0.649,24.89,27.36,5019
+Lag-LLaMA (Fine-Tuned),ll_ft_score,0.08,0.5946,19.11,21.37,3921
+Lag-LLaMA (Fine-Tuned),ll_ft_score,0.1,0.5401,15.16,17.21,3158
+Lag-LLaMA (Fine-Tuned),ll_ft_score,0.12,0.5129,12.06,14.01,2570
+Lag-LLaMA (Fine-Tuned),ll_ft_score,0.14,0.4842,9.86,11.7,2147
+Lag-LLaMA (Fine-Tuned),ll_ft_score,0.16,0.4556,8.08,9.82,1801
+Lag-LLaMA (Fine-Tuned),ll_ft_score,0.18,0.4169,6.67,8.26,1515
+Lag-LLaMA (Fine-Tuned),ll_ft_score,0.2,0.384,5.53,6.99,1282
+Lag-LLaMA (Fine-Tuned),ll_ft_score,0.22,0.3696,4.66,6.06,1112
+Lag-LLaMA (Fine-Tuned),ll_ft_score,0.24,0.351,3.98,5.31,975
+Lag-LLaMA (Fine-Tuned),ll_ft_score,0.26,0.3352,3.45,4.73,867
+Lag-LLaMA (Fine-Tuned),ll_ft_score,0.28,0.3138,2.95,4.14,760
+Lag-LLaMA (Fine-Tuned),ll_ft_score,0.3,0.2923,2.61,3.72,682
+Lag-LLaMA (Fine-Tuned),ll_ft_score,0.32,0.2851,2.19,3.27,600
+Lag-LLaMA (Fine-Tuned),ll_ft_score,0.34,0.265,1.88,2.88,529
+Lag-LLaMA (Fine-Tuned),ll_ft_score,0.36,0.2407,1.76,2.67,490
+Lag-LLaMA (Fine-Tuned),ll_ft_score,0.38,0.2278,1.56,2.43,445
+Lag-LLaMA (Fine-Tuned),ll_ft_score,0.4,0.2235,1.4,2.25,413
+Lag-LLaMA (Fine-Tuned),ll_ft_score,0.42,0.212,1.23,2.03,373
+Lag-LLaMA (Fine-Tuned),ll_ft_score,0.44,0.1991,1.1,1.86,341
+Lag-LLaMA (Fine-Tuned),ll_ft_score,0.46,0.1905,0.98,1.7,312
+Lag-LLaMA (Fine-Tuned),ll_ft_score,0.48,0.1777,0.88,1.55,285
+Lag-LLaMA (Fine-Tuned),ll_ft_score,0.5,0.1633,0.77,1.39,255
+Lag-LLaMA (Fine-Tuned),ll_ft_score,0.52,0.1576,0.7,1.3,239
+Lag-LLaMA (Fine-Tuned),ll_ft_score,0.54,0.1476,0.66,1.22,224
+Lag-LLaMA (Fine-Tuned),ll_ft_score,0.56,0.1375,0.59,1.12,205
+Lag-LLaMA (Fine-Tuned),ll_ft_score,0.58,0.1275,0.53,1.01,186
+Lag-LLaMA (Fine-Tuned),ll_ft_score,0.6,0.1046,0.5,0.89,164
+Lag-LLaMA (Fine-Tuned),ll_ft_score,0.62,0.0946,0.41,0.77,141
+Lag-LLaMA (Fine-Tuned),ll_ft_score,0.64,0.0831,0.36,0.68,124
+Lag-LLaMA (Fine-Tuned),ll_ft_score,0.66,0.086,0.3,0.63,115
+Lag-LLaMA (Fine-Tuned),ll_ft_score,0.68,0.0688,0.26,0.52,95
+Lag-LLaMA (Fine-Tuned),ll_ft_score,0.7000000000000001,0.0602,0.19,0.42,77
+Lag-LLaMA (Fine-Tuned),ll_ft_score,0.72,0.0544,0.2,0.4,74
+Lag-LLaMA (Fine-Tuned),ll_ft_score,0.74,0.0544,0.15,0.35,65
+Lag-LLaMA (Fine-Tuned),ll_ft_score,0.76,0.0473,0.13,0.31,57
+Lag-LLaMA (Fine-Tuned),ll_ft_score,0.78,0.0444,0.11,0.28,51
+Lag-LLaMA (Fine-Tuned),ll_ft_score,0.8,0.0358,0.1,0.24,44
+Lag-LLaMA (Fine-Tuned),ll_ft_score,0.8200000000000001,0.0301,0.1,0.22,40
+Lag-LLaMA (Fine-Tuned),ll_ft_score,0.84,0.0272,0.08,0.18,33
+Lag-LLaMA (Fine-Tuned),ll_ft_score,0.86,0.0201,0.07,0.14,26
+Lag-LLaMA (Fine-Tuned),ll_ft_score,0.88,0.0215,0.04,0.12,22
+Lag-LLaMA (Fine-Tuned),ll_ft_score,0.9,0.0158,0.03,0.09,16
+Lag-LLaMA (Fine-Tuned),ll_ft_score,0.92,0.01,0.02,0.05,10
+Lag-LLaMA (Fine-Tuned),ll_ft_score,0.9400000000000001,0.0072,0.0,0.03,5
+Lag-LLaMA (Fine-Tuned),ll_ft_score,0.96,0.0014,0.0,0.01,1
+Lag-LLaMA (Fine-Tuned),ll_ft_score,0.98,0.0,0.0,0.0,0
+Lag-LLaMA (Fine-Tuned),ll_ft_score,1.0,0.0,0.0,0.0,0

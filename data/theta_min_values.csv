@@ -1,0 +1,4 @@
+model,score_col,theta_min
+XGBoost,xgb_score,0.7450271248817444
+Lag-LLaMA (Zero-Shot),ll_score,0.025
+Lag-LLaMA (Fine-Tuned),ll_ft_score,0.19

@@ -1,0 +1,4 @@
+Model,Val_PRAUC,Test_PRAUC,Baseline,Lift
+XGBoost,0.1859,0.2177,0.0528,4.12
+Lag-LLaMA (Zero-Shot),0.0761,0.1116,0.0528,2.11
+Lag-LLaMA (Fine-Tuned),0.153,0.2453,0.0528,4.64

@@ -1,0 +1,4 @@
+EventRecall,FA_per_Day,AvgAlerts_per_Day,n_alerts,n_TP,n_FP,n_events,n_events_hit,Model,theta_min,Budget_B,Cooldown_C
+0.3582,4.42,5.78,1061,250,811,698,250,XGBoost,0.7450271248817444,3,6
+0.6734,30.35,32.91,6038,470,5568,698,470,Lag-LLaMA (Zero-Shot),0.025,3,6
+0.3968,6.13,7.64,1402,277,1125,698,277,Lag-LLaMA (Fine-Tuned),0.19,3,6

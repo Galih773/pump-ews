@@ -1,0 +1,8 @@
+Context_h,Model,EventRecall,FA_per_Day,AvgAlerts_per_Day,theta_min,n_events_hit
+18,LL Zero-Shot,0.6734,30.35,32.91,0.025,470
+18,LL Fine-Tuned,0.3968,6.13,7.64,0.19,277
+24,LL Zero-Shot,0.6977,31.43,34.08,0.02,487
+24,LL Fine-Tuned,0.4384,7.15,8.81,0.19,306
+48,LL Zero-Shot,0.6547,23.54,26.03,0.025,457
+48,LL Fine-Tuned,0.4799,8.82,10.65,0.135,335
+24+ (fitur),XGBoost,0.3582,4.42,5.78,0.745,250

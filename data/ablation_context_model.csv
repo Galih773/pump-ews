@@ -1,0 +1,8 @@
+Context_h,Model,PR-AUC,Lift
+18,LL Zero-Shot,0.1116,2.11
+18,LL Fine-Tuned,0.2453,4.64
+24,LL Zero-Shot,0.1182,2.24
+24,LL Fine-Tuned,0.2458,4.65
+48,LL Zero-Shot,0.1644,3.11
+48,LL Fine-Tuned,0.252,4.77
+24+ (fitur),XGBoost,0.2177,4.12

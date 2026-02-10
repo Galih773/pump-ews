@@ -1,0 +1,6 @@
+{
+  "budget_B": 3,
+  "cooldown_C_h": 6,
+  "lead_window_h": 6,
+  "baseline_quantile": 0.99
+}
