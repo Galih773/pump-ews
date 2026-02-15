@@ -328,19 +328,22 @@ elif page == "📈 Model-Level":
         sec("Context Length Ablation — Model Level")
         cm = D.get('abl_ctx_model',pd.DataFrame())
         if len(cm)>0:
+            cm_plot = cm.copy()
+            cm_plot['Context_h_num'] = pd.to_numeric(cm_plot['Context_h'], errors='coerce')
             fig = go.Figure()
             for model,color in [('LL Zero-Shot',C_ZS),('LL Fine-Tuned',C_FT)]:
-                md = cm[cm['Model']==model]; md = md[md['Context_h'].apply(lambda x:isinstance(x,(int,float)))].sort_values('Context_h')
+                md = cm_plot[(cm_plot['Model']==model) & (cm_plot['Context_h_num'].notna())].sort_values('Context_h_num')
                 if len(md)>0:
-                    fig.add_trace(go.Scatter(x=md['Context_h'],y=md['PR-AUC'],mode='lines+markers+text',name=model,
+                    fig.add_trace(go.Scatter(x=md['Context_h_num'],y=md['PR-AUC'],mode='lines+markers+text',name=model,
                         text=[f"{v:.4f}" for v in md['PR-AUC']],textposition='top center',
                         textfont=dict(size=11,family='JetBrains Mono'),line=dict(color=color,width=3),marker=dict(size=10)))
-            xr = cm[cm['Model']=='XGBoost']
+            xr = cm_plot[cm_plot['Model']=='XGBoost']
             if len(xr)>0:
                 fig.add_hline(y=xr['PR-AUC'].iloc[0],line_dash="dash",line_color=C_XGB,line_width=2,
                              annotation_text=f"XGBoost ({xr['PR-AUC'].iloc[0]:.4f})",annotation_font=dict(size=11,color=C_XGB))
             fig.update_layout(**LAYOUT,height=460,title="PR-AUC vs Context Length",xaxis_title="Context Length (jam)",yaxis_title="PR-AUC")
-            fig.update_xaxes(tickvals=[18,24,48])
+            ctx_ticks = sorted(cm_plot['Context_h_num'].dropna().unique())
+            fig.update_xaxes(tickvals=ctx_ticks if len(ctx_ticks)>0 else [18,24,48])
             st.plotly_chart(fig,use_container_width=True)
             st.dataframe(cm,use_container_width=True,hide_index=True)
             insight("<strong>Interpretasi:</strong> Peningkatan context length secara konsisten meningkatkan PR-AUC Lag-LLaMA. Gap baseline bukan kelemahan arsitektur, melainkan <strong>information asymmetry</strong>.")
@@ -387,19 +390,22 @@ elif page == "🔔 System-Level":
         sec("Context Length Ablation — System Level")
         cs = D.get('abl_ctx_sys',pd.DataFrame())
         if len(cs)>0:
+            cs_plot = cs.copy()
+            cs_plot['Context_h_num'] = pd.to_numeric(cs_plot['Context_h'], errors='coerce')
             st.dataframe(cs,use_container_width=True,hide_index=True)
             fig = make_subplots(rows=1,cols=2,subplot_titles=("EventRecall vs Context","FA/Day vs Context"))
             for model,color in [('LL Zero-Shot',C_ZS),('LL Fine-Tuned',C_FT)]:
-                md = cs[(cs['Model']==model)&(cs['Context_h'].apply(lambda x:isinstance(x,(int,float))))].sort_values('Context_h')
+                md = cs_plot[(cs_plot['Model']==model) & (cs_plot['Context_h_num'].notna())].sort_values('Context_h_num')
                 if len(md)>0:
-                    fig.add_trace(go.Scatter(x=md['Context_h'],y=md['EventRecall'],mode='lines+markers',name=model,line=dict(color=color,width=2.5),marker=dict(size=9)),row=1,col=1)
-                    fig.add_trace(go.Scatter(x=md['Context_h'],y=md['FA_per_Day'],mode='lines+markers',name=model,showlegend=False,line=dict(color=color,width=2.5,dash='dash'),marker=dict(size=9)),row=1,col=2)
-            xr = cs[cs['Model']=='XGBoost']
+                    fig.add_trace(go.Scatter(x=md['Context_h_num'],y=md['EventRecall'],mode='lines+markers',name=model,line=dict(color=color,width=2.5),marker=dict(size=9)),row=1,col=1)
+                    fig.add_trace(go.Scatter(x=md['Context_h_num'],y=md['FA_per_Day'],mode='lines+markers',name=model,showlegend=False,line=dict(color=color,width=2.5,dash='dash'),marker=dict(size=9)),row=1,col=2)
+            xr = cs_plot[cs_plot['Model']=='XGBoost']
             if len(xr)>0:
                 fig.add_hline(y=xr['EventRecall'].iloc[0],line_dash="dash",line_color=C_XGB,row=1,col=1)
                 fig.add_hline(y=xr['FA_per_Day'].iloc[0],line_dash="dash",line_color=C_XGB,row=1,col=2)
             fig.update_layout(**LAYOUT,height=430)
-            fig.update_xaxes(title_text="Context (jam)",tickvals=[18,24,48])
+            ctx_ticks = sorted(cs_plot['Context_h_num'].dropna().unique())
+            fig.update_xaxes(title_text="Context (jam)",tickvals=ctx_ticks if len(ctx_ticks)>0 else [18,24,48])
             fig.update_yaxes(title_text="EventRecall",row=1,col=1)
             fig.update_yaxes(title_text="FA/Day",row=1,col=2)
             st.plotly_chart(fig,use_container_width=True)
